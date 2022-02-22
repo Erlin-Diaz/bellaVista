@@ -1,0 +1,242 @@
+/* RESETEO*/
+* {
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+/* GRID INDEX / PRODUCTOS / NOSOTROS */
+.contenedor{
+    width: 100%;
+    display: grid;
+
+    grid-template-areas: 
+        "header     header      header"
+        "productos  productos   productos"
+        "eventos    eventos     eventos"
+        "footer     footer      footer"
+        "menuFin    menuFin     menuFin"
+    ;
+}
+
+/* HEADER*/
+.contenedor .header{
+    grid-area: header;
+
+    background: #333;
+    height: 65px;
+    position:sticky ;
+    top: 0px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.contenedor .header .logo{
+    text-align: center;
+}
+.contenedor .header .logo h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.contenedor .header .logo p{
+    color: #4CAF50;
+}
+
+/* MENU */
+
+.contenedor .header .menu a{
+    padding: 8px ;
+    text-decoration: none;
+    color: #fff;   
+}
+
+.contenedor .header .menu ul {
+    list-style: none;
+}
+
+.contenedor .header .menu li {
+    float: left;
+}
+
+header nav li a:hover{
+    background-color: black;
+    border-bottom: solid 5px #4CAF50;
+}
+
+li .active{
+    background-color: #4CAF50;
+}
+
+
+/* PRODUCTOS */
+.contenedor .productos{
+    grid-area: productos;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.contenedor .productos article{
+    float: left;
+    width: 25%;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.contenedor .productos article img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contenedor .productos h2{
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+}
+.contenedor .productos h3{
+    width: 100%;
+    text-align: center;
+    background:  #4CAF50;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* EVENTOS */
+.contenedor .eventos{
+    grid-area: eventos;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.contenedor .eventos article{
+    float: left;
+    width: 40%;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.contenedor .eventos article iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contenedor .eventos h2{
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+.contenedor .eventos h3{
+    width: 100%;
+    text-align: center;
+    background:  #4CAF50;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+.contenedor .footer{
+    grid-area: footer;
+    height: 100px;
+    background: #333;
+    height: 65px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* CELULAR */
+.contenedor .footer .cel{
+color: #fff;
+} 
+
+/* LOGO FINAL */
+.contenedor .footer .logoFin{
+    text-align: center;
+}
+.contenedor .footer .logoFin h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.contenedor .footer .logoFin p{
+    color: #4CAF50;
+}
+
+/* REDES */
+.contenedor .footer .redes{  
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor .footer .redes a{
+    text-decoration: none;
+    color: #fff;   
+}
+
+.contenedor .footer .redes ul {
+    list-style: none;
+    width: 100%;
+}
+
+.contenedor .footer .redes ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+footer div li:hover{
+    background-color: #4CAF50;
+    border-bottom: solid 0px #000;
+}
+
+/* MENU FINAL */
+.contenedor .menuFin{
+    grid-area: menuFin;
+    background: #333;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.contenedor .menuFin a{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;   
+}
+
+.contenedor .menuFin ul {
+    list-style: none;
+}
+
+.contenedor .menuFin li {
+    float: left;
+}
+
+.menuFin li a:hover{
+    background-color: black;
+    border-bottom: solid 5px #4CAF50;
+}
+
+.menuFin  li.active{
+    background-color: #4CAF50;
+    
+}
